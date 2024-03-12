@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button variant="contained" onClick={handleClick}>Haz click aquí!</Button>
-        {clicked && <d>Te quiero mucho preciosa!</d>}
+        {clicked && <d>Te quiero mucho preciosa!❤️</d>}
       </header>
     </div>
   );
