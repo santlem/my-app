@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Button from '@mui/material/Button';
 
 function App() {
+
+  const [clicked, setClicked] = useState(false);
+
+  function handleClick() {
+    setClicked(true);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button variant="contained" onClick={handleClick}>Haz click aquí!</Button>
+        {clicked && <d>Te quiero mucho preciosa!</d>}
       </header>
     </div>
   );
